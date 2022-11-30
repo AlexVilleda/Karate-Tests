@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-5","id":3},{"content":"pool-1-thread-3","id":4},{"content":"pool-1-thread-4","id":5}];
+var items = [{"id":1,"group":1,"content":"conduitApp\/feature\/Articles[1:9]","start":1666214965172,"end":1666214971658,"title":"conduitApp\/feature\/Articles[1:9] 15:29:25.172-15:29:31.658 Create new article"},{"id":2,"group":2,"content":"conduitApp\/feature\/Articles[2:23]","start":1666214965172,"end":1666214973399,"title":"conduitApp\/feature\/Articles[2:23] 15:29:25.172-15:29:33.399 Create and delete article"},{"id":3,"group":3,"content":"conduitApp\/feature\/SignUp[1:8]","start":1666214965171,"end":1666214970542,"title":"conduitApp\/feature\/SignUp[1:8] 15:29:25.171-15:29:30.542 New User Sign Up (User and username already taken)"},{"id":4,"group":3,"content":"conduitApp\/feature\/SignUp[2:25]","start":1666214970571,"end":1666214973285,"title":"conduitApp\/feature\/SignUp[2:25] 15:29:30.571-15:29:33.285 New User Sign Up (Password can't be blank)"},{"id":5,"group":4,"content":"conduitApp\/feature\/SignUp[3.1:102]","start":1666214970865,"end":1666214973289,"title":"conduitApp\/feature\/SignUp[3.1:102] 15:29:30.865-15:29:33.289 Validate Sign Up erros messages"},{"id":6,"group":5,"content":"conduitApp\/feature\/SignUp[3.2:103]","start":1666214971237,"end":1666214973217,"title":"conduitApp\/feature\/SignUp[3.2:103] 15:29:31.237-15:29:33.217 Validate Sign Up erros messages"},{"id":7,"group":1,"content":"conduitApp\/feature\/SignUp[3.3:104]","start":1666214971667,"end":1666214973255,"title":"conduitApp\/feature\/SignUp[3.3:104] 15:29:31.667-15:29:33.255 Validate Sign Up erros messages","className":"failed"},{"id":8,"group":5,"content":"conduitApp\/feature\/SignUp[3.4:105]","start":1666214973223,"end":1666214974101,"title":"conduitApp\/feature\/SignUp[3.4:105] 15:29:33.223-15:29:34.101 Validate Sign Up erros messages","className":"failed"},{"id":9,"group":1,"content":"conduitApp\/feature\/SignUp[3.5:106]","start":1666214973260,"end":1666214974219,"title":"conduitApp\/feature\/SignUp[3.5:106] 15:29:33.260-15:29:34.219 Validate Sign Up erros messages","className":"failed"},{"id":10,"group":3,"content":"conduitApp\/feature\/SignUp[3.6:107]","start":1666214973292,"end":1666214974262,"title":"conduitApp\/feature\/SignUp[3.6:107] 15:29:33.292-15:29:34.262 Validate Sign Up erros messages"},{"id":11,"group":4,"content":"conduitApp\/feature\/SignUp[3.7:108]","start":1666214973293,"end":1666214974279,"title":"conduitApp\/feature\/SignUp[3.7:108] 15:29:33.293-15:29:34.279 Validate Sign Up erros messages"},{"id":12,"group":2,"content":"conduitApp\/feature\/SignUp[3.8:109]","start":1666214973409,"end":1666214974215,"title":"conduitApp\/feature\/SignUp[3.8:109] 15:29:33.409-15:29:34.215 Validate Sign Up erros messages","className":"failed"},{"id":13,"group":4,"content":"conduitApp\/feature\/HomePage[1:7]","start":1666214965171,"end":1666214970846,"title":"conduitApp\/feature\/HomePage[1:7] 15:29:25.171-15:29:30.846 Get all tags"},{"id":14,"group":5,"content":"conduitApp\/feature\/HomePage[2:17]","start":1666214965172,"end":1666214971194,"title":"conduitApp\/feature\/HomePage[2:17] 15:29:25.172-15:29:31.194 Get 10 articles from the page"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

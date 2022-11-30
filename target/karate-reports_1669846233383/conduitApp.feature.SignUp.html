@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("2a4966a2-56f5-4a9e-af2e-7866957396a3",{name:"Alex Villeda"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>conduitApp.feature.SignUp</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-10-22 12:56:26 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>New User Sign Up (User and username already taken)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:25]"><span>[2:25]</span> <span>New User Sign Up (Password can&#39;t be blank)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:102]"><span>[3.1:102]</span> <span>Validate Sign Up error     messages</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.2:103]"><span>[3.2:103]</span> <span>Validate Sign Up error     messages</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.3:104]"><span>[3.3:104]</span> <span>Validate Sign Up error     messages</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.4:105]"><span>[3.4:105]</span> <span>Validate Sign Up error     messages</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.5:106]"><span>[3.5:106]</span> <span>Validate Sign Up error     messages</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">conduitApp/feature/SignUp.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Sign Up new user</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">New User Sign Up (User and username already taken)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>996</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">00:56:13.295 karate.env system property was: null 
+00:56:17.968 this thread waited 4648 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def userData = {email: &quot;user@gmail.com&quot;, username: &quot;user&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.12">{
+    &quot;user&quot;: {
+    &quot;email&quot;: #(userData.email),
+    &quot;password&quot;: &quot;12345678&quot;,
+    &quot;username&quot;: #(userData.username)
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">960</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">00:56:18.014 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 75
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;user@gmail.com&quot;,&quot;password&quot;:&quot;12345678&quot;,&quot;username&quot;:&quot;user&quot;}}
+
+00:56:18.242 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 75
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;user@gmail.com&quot;,&quot;password&quot;:&quot;12345678&quot;,&quot;username&quot;:&quot;user&quot;}}
+
+00:56:18.971 response time in milliseconds: 729
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:21 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 85
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;55-NjrsT9gca4ZDmlQ/ixYZy7cuscc&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fmo%2FV1Uswm5MJbxCtY1lPmfXBXhDHSPsdTqyuPr98jP3raHkVJHSqIZ7xn%2BziwpA0Hv03F8%2FjeNrAuWhFw6rPRmAcHT3IvE833x0HwJMMrs9kg5Wu8DMrrNC5TQAJNonGJYT&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e055244ff6d9a9-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;email&quot;:[&quot;has already been taken&quot;],&quot;username&quot;:[&quot;has already been taken&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:25]</span>
+                <span class="scenario-name">New User Sign Up (Password can&#39;t be blank)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1544</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">00:56:18.986 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = dataGenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">141</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = dataGenerator.getRandomUsername()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">352</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.31">{
+    &quot;user&quot;: {
+    &quot;email&quot;: #(randomEmail),
+    &quot;password&quot;: &quot;&quot;,
+    &quot;username&quot;: #(randomUsername)
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1013</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">00:56:19.522 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 79
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;terrell38@test.com&quot;,&quot;password&quot;:&quot;&quot;,&quot;username&quot;:&quot;larae.corwin&quot;}}
+
+00:56:19.928 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 79
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;terrell38@test.com&quot;,&quot;password&quot;:&quot;&quot;,&quot;username&quot;:&quot;larae.corwin&quot;}}
+
+00:56:20.532 response time in milliseconds: 603
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:22 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 42
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;2a-qbpXJMY/Kgu11LsJcjS0p5wC5b0&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=8U7%2Fd4Fys9VlQreJ5XJ8RBNIR6x%2Fjv%2FII9u%2FG0zoje%2B5p2PtLZlCokVPYI6Dmeb%2BgJmaxGz%2BJR3lxoUvdR93GfLlFCa%2F82QVG3iFMNfD02PTlDZSeXAIC%2FYu9j%2FLBcg7%2BQNI&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e0552e59dc09ee-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;password&quot;:[&quot;can&#39;t be blank&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:102]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:102]</span>
+                <span class="scenario-name">Validate Sign Up error     messages</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1389</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:102]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">00:56:19.221 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = dataGenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">313</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = dataGenerator.getRandomUsername()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">215</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.86">{
+    &quot;user&quot;: {
+    &quot;email&quot;: &quot;#(randomEmail)&quot;,
+    &quot;password&quot;: &quot;Karate123&quot;,
+    &quot;username&quot;: &quot;KarateUser123&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">858</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.96">00:56:19.757 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 91
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;alexander33@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;KarateUser123&quot;}}
+
+00:56:20.060 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 91
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;alexander33@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;KarateUser123&quot;}}
+
+00:56:20.612 response time in milliseconds: 551
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:22 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 50
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;32-JsHJTKwNHW5NSVjFTl5ds7a++54&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1IXttb9ZD1uHDsaUc4OGKp4EZL%2BXOjt8bKsArM1CDvZpUoMxzTYeUkqpQgQmQnVMT1YWRgbfZPBAaiOjgQ3VKgaYTZLvH4kSBzhzAAtqr3Ml2LUHclU3tq5eubQVqU11wbIg&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e0552eaff22248-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;username&quot;:[&quot;has already been taken&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;errors&quot;:{&quot;username&quot;:[&quot;has already been taken&quot;]}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.2:103]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.2:103]</span>
+                <span class="scenario-name">Validate Sign Up error     messages</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1087</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.2:103]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.2:103]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">00:56:20.096 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:103]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = dataGenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">160</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = dataGenerator.getRandomUsername()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">100</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.86">{
+    &quot;user&quot;: {
+    &quot;email&quot;: &quot;KarateUser1@test.com&quot;,
+    &quot;password&quot;: &quot;Karate123&quot;,
+    &quot;username&quot;: &quot;#(randomUsername)&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">821</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.96">00:56:20.366 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 93
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;KarateUser1@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;leroy.heathcote&quot;}}
+
+00:56:20.641 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 93
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;KarateUser1@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;leroy.heathcote&quot;}}
+
+00:56:21.183 response time in milliseconds: 541
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:23 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 47
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;2f-BJEnYqgmLwV4NGkXB9OccFtans4&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BUU15kOIGd3DmonMJUcmvRRF0%2FYFRXVofLvsJCbyUrcxNNeu6XVL3EH%2FS%2FjSwf2qve3ZIQjuZIrWuCKjjRWxPYzxWi81%2F0jufta7mfc2AtrirZZDfcA23ky7OUwpwrhp1rtr&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e055325fbb67d5-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;email&quot;:[&quot;has already been taken&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;errors&quot;:{&quot;email&quot;:[&quot;has already been taken&quot;]}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.3:104]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.3:104]</span>
+                <span class="scenario-name">Validate Sign Up error     messages</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>777</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.3:104]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.3:104]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">00:56:20.543 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.3:104]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = dataGenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = dataGenerator.getRandomUsername()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.86">{
+    &quot;user&quot;: {
+    &quot;email&quot;: &quot;&quot;,
+    &quot;password&quot;: &quot;Karate123&quot;,
+    &quot;username&quot;: &quot;#(randomUsername)&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">730</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.96">00:56:20.595 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 72
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;richie.hegmann&quot;}}
+
+00:56:20.835 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 72
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;richie.hegmann&quot;}}
+
+00:56:21.321 response time in milliseconds: 486
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:23 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 39
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;27-t1Jmbh6zWQl9abIACseOZh9CIII&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=400p97DWowj4PmMvB%2FRfSJkIRkTCsU1Cz9s0LeW2eyWuPNAqRF9nAhz9QC9g4P5d2tIhkd5OV3%2FZGnX%2FbhKPJTqVKv5Y%2FCXEQRD5saEuDTVCVNlFzgMlZxZeAwktQNq44ven&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e055335ab6daa9-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;email&quot;:[&quot;can&#39;t be blank&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;errors&quot;:{&quot;email&quot;:[&quot;can&#39;t be blank&quot;]}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.4:105]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.4:105]</span>
+                <span class="scenario-name">Validate Sign Up error     messages</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>802</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.4:105]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.4:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.5">00:56:20.621 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.4:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = dataGenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = dataGenerator.getRandomUsername()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.86">{
+    &quot;user&quot;: {
+    &quot;email&quot;: &quot;#(randomEmail)&quot;,
+    &quot;password&quot;: &quot;&quot;,
+    &quot;username&quot;: &quot;#(randomUsername)&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">756</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.96">00:56:20.672 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 76
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;lenny36@test.com&quot;,&quot;password&quot;:&quot;&quot;,&quot;username&quot;:&quot;amal.hammes&quot;}}
+
+00:56:20.902 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 76
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;lenny36@test.com&quot;,&quot;password&quot;:&quot;&quot;,&quot;username&quot;:&quot;amal.hammes&quot;}}
+
+00:56:21.424 response time in milliseconds: 521
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:23 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 42
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;2a-qbpXJMY/Kgu11LsJcjS0p5wC5b0&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=CfQlBuQ5p0pGaIEwzurkWJZyfHo5kCvsrYOzVKqN61izfgu3Q1SiHMSSjti5qWxUiF9b1CoQ3yfM0NX8gdYRZ0y8Z2q8kYjQelOlgbKsPfMiX8rsyxe0NfzDICzAK8ckYwaz&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e05533eb1b8d9d-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;password&quot;:[&quot;can&#39;t be blank&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;errors&quot;:{&quot;password&quot;:[&quot;can&#39;t be blank&quot;]}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.5:106]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.5:106]</span>
+                <span class="scenario-name">Validate Sign Up error     messages</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>823</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.5:106]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.5:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.5">00:56:20.986 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.5:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = dataGenerator.getRandomEmail()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomUsername = dataGenerator.getRandomUsername()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="5.86">{
+    &quot;user&quot;: {
+    &quot;email&quot;: &quot;#(randomEmail)&quot;,
+    &quot;password&quot;: &quot;Karate123&quot;,
+    &quot;username&quot;: &quot;&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">765</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.96">00:56:21.048 request:
+1 &gt; POST http://conduit.productionready.io/api/users
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 76
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;melinda10@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;&quot;}}
+
+00:56:21.291 request:
+2 &gt; POST http://conduit.productionready.io/api/users
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWxpbmF0b3IuY29tIiwidXNlcm5hbWUiOiJQcm9iYWRvckthcmF0ZSIsImlhdCI6MTY2NjQyMTc4MCwiZXhwIjoxNjcxNjA1NzgwfQ.EWWhMO4_WymknxH-ypPwMxYz7Rqrx09T4oZFKz9W24U
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 76
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;melinda10@test.com&quot;,&quot;password&quot;:&quot;Karate123&quot;,&quot;username&quot;:&quot;&quot;}}
+
+00:56:21.811 response time in milliseconds: 520
+2 &lt; 422
+2 &lt; Date: Sat, 22 Oct 2022 06:56:24 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 42
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;2a-AIsgLw77Dx1RWMepi6jZReyj6jg&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=kQgPWKRAqMI1iS6qOiCbWikYduv2ncHdkSM1AZ0ht57iJskPVwbHWY0UJTL%2BMuawv8sbgapgzd5aHDLO5L9UT3ixksum5dFVFCdaoDKsBgJqps6iE7dz1RRF7JnfbvVOz%2FDb&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 75e055364bcddae1-MIA
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;errors&quot;:{&quot;username&quot;:[&quot;can&#39;t be blank&quot;]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;errors&quot;:{&quot;username&quot;:[&quot;can&#39;t be blank&quot;]}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

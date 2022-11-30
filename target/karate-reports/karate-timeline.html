@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-5","id":3},{"content":"pool-1-thread-2","id":4},{"content":"pool-1-thread-3","id":5}];
+var items = [{"id":1,"group":1,"content":"conduitApp\/feature\/Articles[1:26]","start":1669847433388,"end":1669847443950,"title":"conduitApp\/feature\/Articles[1:26] 16:30:33.388-16:30:43.950 Create and delete article"},{"id":2,"group":2,"content":"conduitApp\/feature\/SignUp[1:8]","start":1669847433379,"end":1669847440362,"title":"conduitApp\/feature\/SignUp[1:8] 16:30:33.379-16:30:40.362 New User Sign Up (User and username already taken)"},{"id":3,"group":3,"content":"conduitApp\/feature\/SignUp[2:25]","start":1669847433386,"end":1669847441077,"title":"conduitApp\/feature\/SignUp[2:25] 16:30:33.386-16:30:41.077 New User Sign Up (Password can't be blank)"},{"id":4,"group":2,"content":"conduitApp\/feature\/SignUp[3:45]","start":1669847440381,"end":1669847441547,"title":"conduitApp\/feature\/SignUp[3:45] 16:30:40.381-16:30:41.547 New User Sign Up (Successfull Sign Up)"},{"id":5,"group":4,"content":"conduitApp\/feature\/SignUp[4.1:99]","start":1669847440493,"end":1669847441675,"title":"conduitApp\/feature\/SignUp[4.1:99] 16:30:40.493-16:30:41.675 Validate Sign Up error     messages"},{"id":6,"group":3,"content":"conduitApp\/feature\/SignUp[4.2:100]","start":1669847441079,"end":1669847442222,"title":"conduitApp\/feature\/SignUp[4.2:100] 16:30:41.079-16:30:42.222 Validate Sign Up error     messages"},{"id":7,"group":5,"content":"conduitApp\/feature\/SignUp[4.3:101]","start":1669847441333,"end":1669847442219,"title":"conduitApp\/feature\/SignUp[4.3:101] 16:30:41.333-16:30:42.219 Validate Sign Up error     messages"},{"id":8,"group":2,"content":"conduitApp\/feature\/SignUp[4.4:102]","start":1669847441557,"end":1669847442729,"title":"conduitApp\/feature\/SignUp[4.4:102] 16:30:41.557-16:30:42.729 Validate Sign Up error     messages"},{"id":9,"group":4,"content":"conduitApp\/feature\/SignUp[4.5:103]","start":1669847441684,"end":1669847442967,"title":"conduitApp\/feature\/SignUp[4.5:103] 16:30:41.684-16:30:42.967 Validate Sign Up error     messages"},{"id":10,"group":4,"content":"conduitApp\/feature\/HomePage[1:7]","start":1669847433386,"end":1669847440475,"title":"conduitApp\/feature\/HomePage[1:7] 16:30:33.386-16:30:40.475 Get all tags"},{"id":11,"group":5,"content":"conduitApp\/feature\/HomePage[2:17]","start":1669847433388,"end":1669847441265,"title":"conduitApp\/feature\/HomePage[2:17] 16:30:33.388-16:30:41.265 Get 10 articles from the page"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
