@@ -11,17 +11,17 @@ Background: Define URL
     # * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
     # * def token = tokenResponse.AuthToken
 
-# Scenario: Create new article
-#     Given path 'articles'
-#     And request articleRequestBody
-#     When method Post
-#     Then status 200
-#     And match response.article.title == articleRequestBody.article.title
-#     * def slug = response.article.slug
+Scenario: Create new article
+    Given path 'articles'
+    And request articleRequestBody
+    When method Post
+    Then status 200
+    And match response.article.title == articleRequestBody.article.title
+    * def slug = response.article.slug
 
-#     Given path 'articles', slug
-#     When method Delete
-#     Then status 204
+    # Given path 'articles', slug
+    # When method Delete
+    # Then status 204 
 
 Scenario: Create and delete article
     # Given header Authorization = 'Token ' + token
