@@ -24,8 +24,8 @@ public class DataGenerator {
         String body = faker.gameOfThrones().quote();
         JSONObject json = new JSONObject();
         json.put("title", title);
-        json.put("description", title);
-        json.put("body", title);
+        json.put("description", description);
+        json.put("body", body);
         return json;
     }
 }

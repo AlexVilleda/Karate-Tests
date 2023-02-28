@@ -1,8 +1,8 @@
 {
     "article": {
         "tagList": [],
-        "title": "articulo nuevo",
-        "description": "Articulo nuevo temporal",
-        "body": "Sera creado e intantaneamente borrado"
+        "title": "Ejemplo articulo",
+        "description": "Descripcion de articulo",
+        "body": "Cuerpo del articulo"
     }
 }

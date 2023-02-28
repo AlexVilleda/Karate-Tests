@@ -1,4 +1,0 @@
-{
-    "karateRunner.karateRunner.default": "mvn test",
-    "java.configuration.updateBuildConfiguration": "interactive"
-}

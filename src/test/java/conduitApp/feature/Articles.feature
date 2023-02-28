@@ -1,6 +1,7 @@
 
-Feature: Articles
+Feature: 2. Creacion y Eliminacion de Articulos
 
+# Se utilizara contenido generado aleatoriamente para el contenido de los articulos de pruebas
 Background: Define URL
     * url apiUrl
     * def articleRequestBody = read("classpath:conduitApp/json/newArticleRequest.json")
@@ -8,23 +9,19 @@ Background: Define URL
     * set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title
     * set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description
     * set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body
-    # * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
-    # * def token = tokenResponse.AuthToken
 
-Scenario: Create new article
+Scenario: CP-06 Creacion de nuevo articulo de forma exitosa
+
     Given path 'articles'
     And request articleRequestBody
     When method Post
     Then status 200
     And match response.article.title == articleRequestBody.article.title
-    * def slug = response.article.slug
 
-    # Given path 'articles', slug
-    # When method Delete
-    # Then status 204 
 
-Scenario: Create and delete article
-    # Given header Authorization = 'Token ' + token
+
+Scenario: CP-07 Eliminar articulo de forma exitosa
+    # Se creara un nuevo articulo para ser eliminado posteriormente
     Given path 'articles'
     And request articleRequestBody
     When method Post
@@ -35,9 +32,7 @@ Scenario: Create and delete article
     Given path 'articles'
     When method Get
     Then status 200
-    # And match response.articles[0].title == 'Delete article'
 
-    # Given header Authorization = 'Token ' + token
     Given path 'articles', articleId
     When method Delete
     Then status 204
@@ -46,4 +41,4 @@ Scenario: Create and delete article
     Given path 'articles'
     When method Get
     Then status 200
-    And match response.articles[0].title != 'Delete article'
+    And match response.articles[0].title != articleRequestBody.article.title
